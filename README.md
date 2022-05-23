@@ -6,14 +6,13 @@ Javascript code snippets for most searches on Stackoverflow.
 - [Sort array of objects](#sort-array-of-objects)
 - [Format a Date object to a string](#format-a-date-object-to-a-string)
 - [Compare two dates](#compare-two-dates)
-- [Get query string values](get-query-string-values)
-- [Validate an email address](validate-an-email-address)
-- [Get unique values in an array](get-unique-values-in-an-array)
-- [Check if an array includes a value](check-if-an-array-includes-a-value)
-- [Remove a specific item from an array](remove-a-specific-item-from-an-array)
-- [The best way to detect a mobile device](the-best-way-to-detect-a-mobile-device)
-- [Check whether a string contains a substring](check-whether-a-string-contains-a-substring)
-- [Generating random numbers in a specific range](generating-random-numbers-in-a-specific-range)
+- [Get query string values](#get-query-string-values)
+- [Get unique values in an array](#get-unique-values-in-an-array)
+- [Check if an array includes a value](#check-if-an-array-includes-a-value)
+- [Remove a specific item from an array](#remove-a-specific-item-from-an-array)
+- [The best way to detect a mobile device](#the-best-way-to-detect-a-mobile-device)
+- [Check whether a string contains a substring](#check-whether-a-string-contains-a-substring)
+- [Generating random numbers in a specific range](#generating-random-numbers-in-a-specific-range)
 
 ## Sort array of objects
 [Stackoverflow](https://stackoverflow.com/a/1129270/4610522)
@@ -54,20 +53,6 @@ const compared = d1.getTime() > d2.getTime();
 const urlParamss = new URLSearchParams(window.location.search);
 const sort = urlParamss.get('sort');
 // output: MostFrequent
-```
-
-## Validate an email address
-[Stackoverflow](https://stackoverflow.com/a/46181/4610522)
-```js
-const validateEmail = (email) => {
-  return String(email)
-    .toLowerCase()
-    .match(
-      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-    ) !== null;
-};
-// validateEmail("sss.io") > false
-// validateEmail("x@sss.io") > true
 ```
 
 ## Get unique values in an array
