@@ -1,5 +1,5 @@
 # ⭐ js-remember-me
-Javascript code snippets for most searches on Stackoverflow.
+A collection of Javascript code for most searches on Stackoverflow.
 
 # Table of Contents
 
